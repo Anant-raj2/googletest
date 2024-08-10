@@ -5,8 +5,8 @@ project "googletest"
   staticruntime "on"
   architecture "x86_64"
 
-  targetdir "%{wks.location}/bin/" .. outputdir .. "/%{prj.name}"
-  targetdir "%{wks.location}/objs/" .. outputdir .. "/%{prj.name}"
+  targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
+  objdir ("%{wks.location}/objs/" .. outputdir .. "/%{prj.name}")
 
 	files {
 		"src/**.h",
