@@ -1,8 +1,7 @@
-project "googletest"
+project "GTest"
   kind "StaticLib"
-  files {"googletest/include/**", "googletest/src/**"}
   language "C++"
-  staticruntime "on"
+  -- staticruntime "on"
   architecture "x86_64"
 
   targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
